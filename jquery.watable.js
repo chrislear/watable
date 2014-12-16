@@ -270,9 +270,9 @@
                             case "string":
                             case "text":
                                 if (placeHolder == undefined) placeHolder = priv.options.types.string.placeHolder;
-                                placeHolder = (placeHolder === true || placeHolder == undefined) ? 'John Doe' : placeHolder === false ? '' : placeHolder;
+                                placeHolder = (placeHolder === true || placeHolder == undefined) ? 'Type to Find' : placeHolder === false ? '' : placeHolder;
                                 if (tooltip == undefined) tooltip = priv.options.types.string.filterTooltip;
-                                tooltip = (tooltip === true || tooltip == undefined) ? 'Find John Doe:<br/>John Doe<br/>Find all but John Doe:<br/>!John Doe' : tooltip === false ? '' : tooltip;
+                                tooltip = (tooltip === true || tooltip == undefined) ? 'What are you looking for?<br/>Type to Find' : tooltip === false ? '' : tooltip;
                                 elem = $('<input placeholder="{0}" class="filter" type="text" />'.f(placeHolder));
                                 elem.on('keyup', {column: column}, priv.filterChanged);
                                 break;
